@@ -1,0 +1,129 @@
+<!-- 文本缩进
+ 属性名：text-indent
+ 属性值：
+    ·数字 + px 
+    ·数字 + em（推荐1em=当前标签的字号大小）-->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本缩进</title>
+    <style>
+        p {
+            text-indent: 2em; /* 设置段落首行缩进2个em */
+            font-size: 30px; /* 设置字体大小为30px */
+        }
+    </style>
+</head>
+<body>
+    <p>都说编程开发很赚钱， 我苦心专研了两年，其中参加了不少的培训。刚培训完两个星期我就收到了offer , 我承认我不是班里学习最好的。我却是班里第一个找到工作的， 而且还是个大厂我一-直相信勤能补拙。只要有决心什么事都是可以做到的，今天入职一个星期了。公司的人对我都很好，还给我配了电动车和头盔还有大衣。不说了又接了个外卖。</p>
+</body>
+</html> -->
+
+
+
+
+
+<!-- 文本对齐方式
+作用：控制内容水平对齐方式
+属性名：text-align
+
+属性值&作用
+·left-左对齐（默认）
+·center-居中对齐
+·right-右对齐-->
+<!-- 这是标签挪到中间了吗？还是字挪到中间了？其实就是文字被居中了，移动的是内容的位置，不是标签 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>文本对齐</title>
+    
+    <style>
+        h1 {
+            text-align: center; /* 设置标题居中对齐 */
+            font-size: 30px; /* 设置字体大小为30px */
+        }
+    </style>
+</head>
+<body>
+    <h1>这是测试文字</h1>
+</body>
+</html> -->
+
+
+
+
+
+<!-- 图片水平对齐方式
+ text-align本质是控制内容的对齐方式，属性要设置黑内容的父级 -->
+
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片水平对齐方式</title>
+
+    <style>
+        div {
+            text-align: center;
+
+        }
+    </style>
+ </head>
+ <body>
+    <div>
+        <img src="#" alt="此处有个图片">
+    </div>
+ </body>
+ </html> -->
+
+
+
+
+
+
+<!-- 文本修饰线
+ 属性名：text-decoration
+ 属性值：效果
+    ·none：无
+    ·underline：下划线
+    ·line-through：删除线
+    ·overline：上划线 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字修饰线</title>
+    <style>
+        a {
+            text-decoration: none; /* 去掉链接的下划线 */
+        }
+        div {
+            text-decoration: underline;
+        }
+        p {
+            text-decoration: line-through;
+        }
+        span {
+            text-decoration: overline; /* 添加上划线 */
+        }
+
+    </style>
+</head>
+<body>
+    <a href="#">a标签，去掉下划线</a>
+    <div>div标签，添加下划线</div>
+    <p>p标签，添加删除线</p>
+    <span>span标签，添加上划线</span>
+</body>
+</html>
+ 

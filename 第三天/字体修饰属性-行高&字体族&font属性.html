@@ -1,0 +1,122 @@
+<!-- 行高作用：设置多行文本的间距
+ 属性名：line-height
+ 属性值
+    ·数字+px
+    ·数字（当前标签font-size的倍数） -->
+
+    <!-- 行高是由三部分组成：上间距，文本高度，下间距 -->
+
+    <!-- 行高测量方法：从一行文字的最顶端量到下一行文字的最顶端，或者都换到最底端 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行高</title>
+    <style>
+        p {
+            font-size: 20px; /* 设置字体大小为20像素 */
+            /* line-height: 30px; 设置行高为30像素 */
+            /* 行高值是数字，表示是当前标签字体大小的倍数 */
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+    <p>浙江的基层减负，从小小的一块屏幕开始。早几年，每到年底，浙江不少机关单位工作汇报都需配PPT，公务员通常要熬夜改排版、加动画，时间都花在改格式上。内卷之下，PPT越做越“高大上”，有的时候时间和技术水平不够，工作人员只能把PPT外包，费用从每页200到400多元不等，特殊情况额外还要付加急费、服务费，一次3分钟的汇报，做一次PPT往往要花费几千元。除了PPT以外，文旅、宣传、招商等部门对视频制作的需求也很高，动辄需要数万元，甚至10万—20万元左右，尤其加上灯光渲染、音频混响、运动追踪等特效，制作成本还会上涨。</p>
+</body>
+</html> -->
+
+
+
+
+<!-- 行高-垂直居中
+ 垂直居中技巧：行高属性值等于盒子高度属性值 -->
+
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>垂直居中</title>
+    <style>
+        div {
+            height: 100px; /* 设置盒子高度 */
+            background-color: skyblue;
+            /* 为什么行高数值和高度数值一样可以居中呢？是因为100-16（文字像素）=84
+            84px包括上下，所以要除以二=42px */
+
+            /* 只适用于单行文字 */
+            line-height: 100px;
+        }
+    </style>
+ </head>
+ <body>
+    <div>word</div>
+ </body>
+ </html> -->
+
+
+
+
+ <!-- 字体族
+  属性名：font-family
+  属性值：字体名 -->
+
+  <!-- <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体族</title>
+    <style>
+        div{
+            font-family: 楷体;
+        }
+    </style>
+  </head>
+  <body>
+    <div>测试文字</div>
+  </body>
+  </html> -->
+
+
+  <!-- 拓展：font-family属性值可以书写多个字体名，各个名字用逗号隔开，执行顺序是从左到右依次执行 
+   font-family属性最后设置一个字体族名，网页开发建议使用无衬线字体
+   
+   有几种常用的字体族：
+   1. 无衬线字体
+   2. 衬线字体
+   3. 衬线字体的衬线-->
+
+
+
+<!-- font复合属性
+ 可以一个属性完成多个效果
+ 使用场景：设置网页文字公共样式
+ 
+ 复合属性：属性的简写方式，一个属性对应多个值的写法，哥哥属性值之间用空格隔开
+ font：是否倾斜 是否加粗 字号/行高/字体（必须按顺序书写）
+ 
+ 注意：字号和字体值必须书写， 否则font属性不会生效-->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font复合属性</title>
+<style>
+    /* 文字倾斜，文字加粗，字体大小30px，行高两倍，楷体 */
+    div {
+         font: italic 700 30px/2 楷体; 
+        /* font: 30px 楷体; */
+        /* font: italic 700 30px/2; 错误示范 */
+    }
+</style>
+ </head>
+ <body>
+    <div>测试font属性</div>
+ </body>
+ </html>
