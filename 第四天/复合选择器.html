@@ -1,0 +1,123 @@
+<!-- 复合选择器
+ 定义：由两个或多个基础选择器，通过不同的方式组合而成
+ 作用：更准确、高效的选择目标元素（标签） -->
+
+ <!-- 后代选择器：选择某元素的后代元素 
+  选择器写法：父选择器 子选择器 {CSS属性}，父子选择器之间用空格隔开
+  后代选择器会选中所有后代-->
+
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        div span {
+            color: blueviolet;
+        }
+
+        div p span {
+            color: red;
+        }
+    </style>
+ </head>
+ <body>
+    <span>span标签</span>
+    <div>
+        <span>div儿子标签</span>
+        <p>
+            <span>孙子span</span>
+        </p>
+    </div>
+ </body>
+ </html> -->
+
+
+
+
+
+
+<!-- 子代选择器 
+ 选中某元素的子代元素（最近的子级）
+ 写法为：父选择器 > 子选择器 {CSS属性} -->
+
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子代选择器</title>
+    <style>
+        div > span {
+            color: blueviolet;
+        }
+    </style>
+ </head>
+ <body>
+    <div>
+        <span>儿子span</span>
+        <p>
+            <span>孙子span</span>
+        </p>
+    </div>
+ </body>
+ </html> -->
+
+
+
+
+
+
+
+ <!-- 并集选择器：选中多组标签设置相同样式 
+  写法：选择器1,选择器2,...,选择器N {CSS属性}-->
+
+
+  <!-- <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>并集选择器</title>
+    <style>
+        div,
+        p,
+        span {
+            color: blueviolet;
+        }
+    </style>
+  </head>
+  <body>
+    <p>标签</p>
+    <span>儿子span</span>
+    <div>div标签</div>
+  </body>
+  </html> -->
+
+
+
+
+
+<!-- 交集选择器：选中同时满足多个条件的元素
+ 写法：选择器1选择器2 {CSS属性} 
+ 如果交集选择器中有标签选择器，标签选择器必须书写在最前面-->
+
+   <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交集选择器</title>
+    <style>
+        p.box {
+            color: blueviolet;
+        }
+    </style>
+  </head>
+  <body>
+    <p class="box">p标签，使用了类选择器</p>
+    <p>p标签</p>
+    <div class="box">div标签，使用了类选择器</div>
+  </body>
+  </html> 

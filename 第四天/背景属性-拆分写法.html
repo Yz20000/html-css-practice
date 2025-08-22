@@ -1,0 +1,248 @@
+<!-- 背景图
+ 网页中, 使用背景图实现装饰性的图片效果
+ 
+ 属性名：background-image
+ 属性值：url(背景图url)
+ 
+ 背景图默认是平铺的效果-->
+
+
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图</title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            background-image: url('./shopcar_01.png');
+        }
+    </style>
+ </head>
+ <body>
+    <div>div标签</div>
+ </body>
+ </html> -->
+
+
+
+ <!-- 背景图平铺方式
+  属性名：background-repeat
+  属性值
+    no-repeat:不平铺. 只在左上角显示一张图
+    repeat:平铺。默认效果，不需要特别加
+    repeat-x:水平方向平铺。横向平铺 
+    repeat-y:垂直方向平铺 -->
+
+    <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图</title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: aquamarine;
+            background-image: url('./shopcar_01.png');
+            background-repeat: no-repeat;
+        }
+    </style>
+ </head>
+ <body>
+    <div>div标签</div>
+ </body>
+ </html> -->
+
+
+
+
+
+<!-- 背景图位置
+ 属性名：background-position
+    属性值：水平方向位置 垂直方向位置
+      ·关键字
+        left top:左上角
+        left center:左边中间
+        left bottom:左下角
+        center top:中间上方
+        center center:中间位置
+        center bottom:中间下方
+        right top:右上角
+        right center:右边中间
+        right bottom:右下角
+     ·坐标（数字+px，正负都可以）
+    
+    可以使用百分比来设置位置：50% 50% 
+    水平方向：正数向右，负数向左
+    垂直方向：正数向下，负数向上
+    
+    提示：关键字取值写法，可以颠倒取值顺序
+    可以只写一个关键词，另一个方向默认为居中；数字只写一个值表示水平方向，垂直方向为居中-->
+
+
+    <!-- <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>背景图位置</title>
+        <style>
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: aquamarine;
+            background-image: url('./shopcar_01.png');
+            background-repeat: no-repeat;
+
+            /* background-position: 0 0; */
+            /* background-position: left top; */
+            /* background-position: right bottom; */
+            /* background-position: -50px 0; */
+            /* background-position: 50px center; */
+
+            /* background-position: bottom left; */
+            /* background-position: bottom; */
+            background-position: 50px;
+
+        }
+    </style>
+    </head>
+    <body>
+        <div>div标签</div>
+    </body>
+    </html> -->
+
+
+
+
+
+    <!-- 背景图缩放
+     作用：设置背景图大小
+     属性名：background-size
+     常用属性值：
+        ·关键字：
+            cover：等比例缩放背景图片以完全覆盖背景区，可能背景图片部分看不见。缩放背景图片直到背景区被完全覆盖，可能导致图片显示不全。
+            contain：等比例缩放背景图片以完全覆盖背景区，可能背景区部分空白。如果图的宽高和盒子尺寸相等就会停止缩放，可能会有露白。
+
+        ·百分比：根据盒子尺寸计算图片大小。如果只写100%，则表示宽度100%，高度自动按比例放大。
+
+        ·数字+单位（比如px） -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图缩放</title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: aquamarine;
+            background-image: url('./shopcar_01.png');
+            background-repeat: no-repeat;
+
+            /* background-size: cover;  */
+            /* background-size: contain; */
+            /* background-size: 50% 50%; */
+            /* background-size: 200px 100px; */
+        }
+    </style>
+</head>
+<body>
+    <div>div标签</div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+<!-- 背景图固定
+ 作用：北京不会随着元素的内容滚动
+ 属性名：background-attachment(bga)
+ 属性值：fixed -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图固定</title>
+    <style>
+        body {
+            background-image: url(./shopcar_01.png);
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+    <p>测试文字，撑开body，让浏览器有滚动条</p>
+
+</body>
+</html>

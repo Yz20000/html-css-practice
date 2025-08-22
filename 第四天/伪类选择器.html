@@ -1,0 +1,72 @@
+<!-- 伪类选择器：伪类表示无元素状态，选中元素的某个状态设置样式
+   鼠标悬停状态：选择器:hover{CSS属性} 
+   任何标签都可以设置鼠标悬停的状态-->
+
+   <!-- <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style>
+        a:hover {
+            color: red;
+        }
+        div.box:hover {
+            color: blueviolet;
+        }
+    </style>
+   </head>
+   <body>
+        <a href="#">a标签</a>
+        <div class="box">div标签</div>
+   </body>
+   </html> -->
+
+
+
+
+
+
+   <!-- 伪类-超链接（拓展）
+    超链接一共有四个状态
+    :link 作用为访问前
+    :visited 作用为访问后
+    :hover 作用为鼠标悬停时
+    :active 作用为点击时
+    
+    hint：如果要为超链接设置以上四个状态，需要按照LVHA的顺序书写
+    工作中，一个a标签选择器设置超链接的样式，一般只用设置hover状态就行-->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>伪类-超链接</title>
+        <style>
+            /* a:link {
+                color: green;
+            }
+            a:visited {
+                color: brown;
+            }
+            a:hover {
+                color: yellow;
+            }
+            a:active {
+                color: red;
+            } */
+             a{
+                color: green;
+             }
+
+             a:hover {
+                color: red;
+             }
+        </style>
+    </head>
+    <body>
+        <a href="#">a标签，测试伪类</a>
+    </body>
+    </html>
